@@ -35,9 +35,9 @@ polymer不是组件库，是帮助前端开发人员，更简单快速地开发�
 
 图中<hello-polymer></hello-polymer>就是polymer引用组件的方式，是不是很像html标签。
  
-polymer官网已经添加很多常用的组件供开发者使用(*[点击访问官方组件](https://elements.polymer-project.org/))，能够满足简单的网站开发。
+polymer官网已经添加很多常用的组件供开发者使用([点击访问官方组件](https://elements.polymer-project.org/))，能够满足简单的网站开发。
  
-以上内容是本人通过使用polymer后的看法，有不对的地方请指正，想看官方讲解(*[点这里](https://www.polymer-project.org/1.0/))
+以上内容是本人通过使用polymer后的看法，有不对的地方请指正，想看官方讲解([点这里](https://www.polymer-project.org/1.0/))
  
 使用polymer的弊端:
 1.网上的质料很少，中文的更少，学习成本高。
