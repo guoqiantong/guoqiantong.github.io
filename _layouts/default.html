@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html>
-	
   {% include head.html %}
-
   <body>
-    {% include header.html %}
-    <div id="main" class="container main">
-      {{ content }}
-    </div>
+    {% include google_analytics.html %}
+    <main>
+      {% include header.html %}
 
-    <div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部">
-      <a href="javascript:;">
-        <div class="arrow"></div>
-        <div class="stick"></div>
-      </a>
-    </div>
+      <div class="container">
+        {{ content }}
+      </div>
 
-    {% include footer.html %}
+      {% include footer.html %}
 
-    <!-- 在新窗口中打开 -->
-    <script type="text/javascript">
-      function addBlankTargetForLinks() {
-        $('a[href^="http"]').each(function() {
-          $(this).attr('target', '_blank');
+      {% include github-corner.html %}
+
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script>
+      $(document).ready(function() {
+        $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
+          $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
+          e.preventDefault();
         });
-      }
-      $(document).bind('DOMNodeInserted', function(event) {
-        addBlankTargetForLinks();
       });
-    </script>
+      </script>
+    </main>
   </body>
-
 </html>
